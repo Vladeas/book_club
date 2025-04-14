@@ -62,7 +62,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
-# Authentication solution 
+# Authentication solution
 gem "devise", "~> 4.9"
 
 gem "devise_invitable"
