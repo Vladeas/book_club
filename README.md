@@ -1,24 +1,7 @@
 # README
+Library project, just to make accessing my ebooks more complicated than necessary ')
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+.ENV file structure
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+DATABASE_USERNAME=username
+DATABASE_PASSWORD=password
