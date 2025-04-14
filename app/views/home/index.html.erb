@@ -1,3 +1,8 @@
 <h1>Home#index</h1>
 <h2>Hello Darkness m...</h2>
+<% if reader_signed_in? %>
+  <%= button_to "Logout", destroy_reader_session_path, method: :delete %>
+<% else %>
+  <%= button_to "Login", new_reader_session_path, method: :get %>
+<% end %>
 <p>Find me in app/views/home/index.html.erb</p>

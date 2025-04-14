@@ -61,3 +61,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Authentication solution 
+gem "devise", "~> 4.9"
+
+gem "devise_invitable"
