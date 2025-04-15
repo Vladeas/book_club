@@ -7,3 +7,15 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+case Rails.env
+when "development"
+    Reader.create!(email: "user@example.com",
+            password: ENV["SEED_PASSWORD"],
+            password_confirmation: ENV["SEED_PASSWORD"]) if !Reader.find_by_email("user@example.com")
+
+    Reader.create!(email: "user2@example.com",
+            password: ENV["SEED_PASSWORD"],
+            password_confirmation: ENV["SEED_PASSWORD"]) if !Reader.find_by_email("user2@example.com")
+when "production"
+  # A secret tool for later ;)
+end
