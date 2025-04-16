@@ -40,6 +40,9 @@ gem "bootsnap", require: false
 # Active Admin, administration framework
 gem "activeadmin"
 
+# Active Admin, addons
+gem 'activeadmin_addons'
+
 # Sassc
 gem "sassc"
 
