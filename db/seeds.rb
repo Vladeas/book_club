@@ -16,6 +16,9 @@ when "development"
     Reader.create!(email: "user2@example.com",
             password: ENV["SEED_PASSWORD"],
             password_confirmation: ENV["SEED_PASSWORD"]) if !Reader.find_by_email("user2@example.com")
+    AdminUser.create!(email: "admin@example.com",
+            password: ENV["SEED_PASSWORD"],
+            password_confirmation: ENV["SEED_PASSWORD"]) if !AdminUser.find_by_email("admin@example.com")
 when "production"
   # A secret tool for later ;)
 end
